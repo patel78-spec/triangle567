@@ -19,23 +19,23 @@ class TestTriangles(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
 
     # Testing Invalid Inputs
-    def testInvalidInput1(self):
+    def testInvalidInputA(self):
         self.assertEqual(classifyTriangle(-1, -1, -1), 'InvalidInput')
 
-    def testInvalidInput3(self):
+    def testInvalidInputB(self):
         self.assertEqual(classifyTriangle("2", "10", "10"), 'InvalidInput')
 
     # Testing Not a Triangle
-    def testNotATriangle1(self):
+    def testNotATriangleA(self):
         self.assertEqual(classifyTriangle(6, 1, 1), 'NotATriangle')
 
-    def testNotATriangle2(self):
+    def testNotATriangleB(self):
         self.assertEqual(classifyTriangle(1, 5, 2), 'NotATriangle')
 
-    def testNotATriangle3(self):
+    def testNotATriangleC(self):
         self.assertEqual(classifyTriangle(1, 6, 15), 'NotATriangle')
 
-    def testNotATriangle4(self):
+    def testNotATriangleD(self):
         self.assertEqual(classifyTriangle(1, 17, 5), 'NotATriangle')
 
     # testing for equilateral triangles
