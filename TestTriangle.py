@@ -79,7 +79,7 @@ class TestTriangles(unittest.TestCase):
 
      # Testing Isosceles Triangles
     def testIsoscelesTriangleA(self):
-        self.assertEqual(classifyTriangle(5, 5, 13), 'Isosceles')
+        self.assertEqual(classifyTriangle(5, 5, 3), 'Isosceles')
 
     def testIsoscelesTriangleB(self):
         self.assertEqual(classifyTriangle(4, 26, 26), 'Isosceles')
