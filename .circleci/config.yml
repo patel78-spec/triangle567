@@ -19,7 +19,7 @@ jobs:
       - checkout
       - run: 
           command: 
-            python -m unittest --junitxml=test-results/junit.xml TestTriangle.py
+            python -m unittest TestTriangle.py
       - store_test_results:
           path: test-results
 
